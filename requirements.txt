@@ -1,0 +1,14 @@
+# Core Flask application and utilities
+Flask
+werkzeug
+
+# Video Processing and Computer Vision
+opencv-python
+ultralytics
+
+# YouTube Download
+pytube
+
+# General
+requests
+numpy
