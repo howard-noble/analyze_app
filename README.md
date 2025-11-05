@@ -2,18 +2,18 @@
 
 This is an open-source project dedicated to automating the analysis of rugby matches using computer vision.
 
-The goal is to accept any video source (YouTube link or direct upload), analyze the footage frame-by-frame, and automatically identify, timestamp, and clip specific rugby moments from a list of over 60 defined events (e.g., 'Dominant Tackle', 'Scrum Wheel', 'Chip Kick').
+The goal is to accept any video source and automatically identify, timestamp, and clip specific rugby moments from a list of over 60 defined events.
 
 ## 🚧 Status: ML Pipeline is a Work-in-Progress
 
-The current application structure is complete (Flask app, video download, OpenCV clipping, JSON output). However, the **event detection logic is currently a placeholder** that generates random timestamps for demonstration purposes.
+The current application structure (Flask app, video download, clipping) is complete. However, the **event detection logic is currently a placeholder** that generates random timestamps.
 
 **We are actively seeking contributors to build the Machine Learning and Heuristics pipeline!**
 
 ## ✨ Features (Complete)
 
 * Input via YouTube URL or local video file upload.
-* Video downloading via \pytube\ (for YouTube sources).
+* Video downloading via \pytube\.
 * Automatic clip extraction around detected moments using \OpenCV\.
 * Web page output with **clickable timestamps**.
 * Downloadable JSON metadata file.
@@ -22,11 +22,7 @@ The current application structure is complete (Flask app, video download, OpenCV
 
 ### Prerequisites
 
-You need Python 3.8+ and the following libraries:
-
-\\\ash
-pip install -r requirements.txt
-\\\
+You need Python 3.8+ and the dependencies listed in \equirements.txt\.
 
 ### Running the Application
 
@@ -39,8 +35,7 @@ pip install -r requirements.txt
     \\\ash
     python app.py
     \\\
-3.  Access the web interface at \http://0.0.0.0:5000/\.
 
 ## 🤝 Contributing
 
-We need your help to develop the advanced detection logic. Please see the **[CONTRIBUTING.md](CONTRIBUTING.md)** file for guidelines on how to contribute.
+See the **[CONTRIBUTING.md](CONTRIBUTING.md)** file for guidelines on how to contribute to the Machine Learning model and heuristics logic.
